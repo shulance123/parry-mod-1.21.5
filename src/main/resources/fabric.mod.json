@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "parrymod",
+	"version": "${version}",
+	"name": "A Parry Mod By Shulance",
+	"description": "Any sword can now parry, melee attacks, arrows, and fire balls",
+	"authors": [
+		"Shulance!"
+	],
+	"contact": {
+		"homepage": "https://shulance.net/",
+		"sources": "https://github.com/shulance/parry-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/parrymod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.shulance.parrymod.ParryMod"
+		],
+		"fabric-datagen": [
+			"net.shulance.parrymod.ParryModDataGenerator"
+		],
+		"client": [
+			"net.shulance.parrymod.ParryModClient"
+		]
+	},
+	"mixins": [
+		"parrymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
